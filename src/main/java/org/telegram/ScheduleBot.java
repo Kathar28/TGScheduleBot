@@ -11,6 +11,7 @@ import java.util.logging.Level;
 
 
 public class ScheduleBot extends TelegramLongPollingBot {
+    BotConfig botInfo;
 
     @Override
     public void onUpdateReceived(Update update) {
@@ -33,12 +34,12 @@ public class ScheduleBot extends TelegramLongPollingBot {
 
     @Override
     public String getBotUsername() {
-        return "ScheduleBot";
+        return BotConfig.BotName;
     }
 
     @Override
     public String getBotToken() {
-        return "5393795445:AAHD-NFrBNjsxrsgOMs8oHhv6s34qYOMkkw";
+        return BotConfig.BotToken;
     }
 
 }
